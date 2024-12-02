@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+    background-color: gray;
+}
+a{
+    color: brown;
+}
+a:visited{
+    color: red;
+}
+a:active{
+    color: green;
+}
