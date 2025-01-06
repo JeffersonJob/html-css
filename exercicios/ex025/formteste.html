@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Teste Pessoal</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset class="cadastro">
+            <legend class="letra1">Cadastro de Pacientes</legend>
+            <fieldset class="dados">
+                <legend>Dados</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" required> <br> <br>
+                <label for="ida">Idade:</label>
+                <input type="number" name="ida" id="ida" maxlength="100" size="12" required>
+            </fieldset>
+            <fieldset class="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="out">
+                <label for="out">Outro</label>
+            </fieldset>
+
+            <fieldset class="serviços">
+                <legend>Serviços Desejados</legend>
+                <input type="checkbox" name="mas" id="mas">
+                <label for="mas">Massagem</label>
+                <input type="checkbox" name="lim" id="lim">
+                <label for="lim">Limpeza de Pele</label>
+                <input type="checkbox" name="remo" id="remo">
+                <label for="remo">Remoção de Tattoo</label>
+                <input type="checkbox" name="peel" id="peel">
+                <label for="peel">Peeling Holliwood</label>
+            </fieldset>
+            
+            <fieldset class="contato">
+                <legend>Contato</legend>
+                <label for="tel">Celular:</label>
+                <input type="tel" name="tel" id="tel" placeholder="(**) * ****-****" required> <br> <br>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar" class="enviar">
+                <input type="reset" value="Limpar" class="limpar">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
